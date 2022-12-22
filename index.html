@@ -1,94 +1,116 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexandra Green LandSign</title>
-  </head>
-  <body>
-    <header>
-      <div class="conteiner">
-        <img src="" alt="" class="logo" />
-        <nav class="header-menu">
-          <ul class="header-menu">
-            <li class="header-menu_listitem active"><a href="">главная</a></li>
-            <li class="header-menu_listitem"><a href="">услуги</a></li>
-            <li class="header-menu_listitem"><a href="">портфолио</a></li>
-            <li class="header-menu_listitem"><a href="">контакты</a></li>
-          </ul>
-        </nav>
-        <div class="icons-link">
-          <img src="" alt="" class="icons-viber" />
-          <img src="" alt="" class="icons-inst" />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css">
+  <title>Alexandra Green LandSign</title>
+</head>
+
+<body>
+  <header>
+    <div class="container d-flex al-c jc-sb">
+      <img src="images/Logo.svg" alt="" class="logo" />
+      <nav class="header-menu">
+        <ul class="header-menu d-flex jc-sb al-c">
+          <li class="header-menu_listitem active"><a href="">главная</a></li>
+          <li class="header-menu_listitem"><a href="">портфолио</a></li>
+          <li class="header-menu_listitem"><a href="">контакты</a></li>
+        </ul>
+      </nav>
+      <div class="icons d-g">
+        <a href="" class="icons-viber"><img src="images/Viber-header.svg" alt="" /></a>
+        <a href="" class="icons-inst"><img src="images/Inst-header.svg" alt="" /></a>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <section class="about_us">
-        <h2>О нас</h2>
-        <img src="" alt="" />
-        <p></p>
-      </section>
+  <main>
 
-      <section class="services">
-        <h2>Услуги</h2>
-        <div class="services-list">
-          <div class="">
-            <img src="" alt="" />
-            <p>Проектирование и реализация</p>
-          </div>
-          <div class="">
-            <img src="" alt="" />
-            <p>устройство газонов</p>
-          </div>
-          <div class="">
-            <img src="" alt="" />
-            <p>схемы клумб</p>
-          </div>
-          <div class="">
-            <img src="" alt="" />
-            <p>искусственные водоемы</p>
-          </div>
-          <div class="">
-            <img src="" alt="" />
-            <p>уход за садом</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="portfolio">
-        <h2>Портфолио</h2>
-      </section>
-    </main>
-
-    <footer>
+    <section class="banner">
       <div class="container">
-        <h2>Или оставьте заявку</h2>
-        <div class="callback-form">
-          <div class="callback-form_date">
-            <input type="text" name="" id="" placeholder="Введите имя" />
-            <input
-              type="number"
-              name=""
-              id=""
-              placeholder="Введите номер телефона"
-            />
-            <input type="email" name="" id="" placeholder="Введите e-mail" />
-          </div>
-
-          <textarea
-            class="callback-form_text"
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Введите сообщение"
-          ></textarea>
+        <h1>Ландшафтная студия Alexandra Green LandSign </h1>
+        <div class="banner-logo d-flex al-c jc-sb ">
+          <p>Гармония в природе на вашем остравке земли</p>
+          <img src="images/banner-logo.png" alt="">
+          <p>Создаю сады для комфортной жизни</p>
         </div>
-        <input type="submit" value="Отправить данные" />
       </div>
-    </footer>
-  </body>
+    </section>
+
+    <section class="about-us">
+      <div class="container">
+        <h2>О нас</h2>
+        <div class="about-us_text d-flex jc-sb al-c">
+          <img src="images/about-us-image.png" alt="" />
+          <p>Пути бога неисповедимы</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2>Услуги</h2>
+        <div class="services-list d-g ">
+          <a href="" class="services-list_item">
+            <div class="services-list_item">
+              <img src="images/services-project.png" alt="" />
+              <p>проектирование и реализация</p>
+            </div>
+          </a>
+          <a href="" class="services-list_item">
+            <div class="services-list_item">
+              <img src="images/services-gazon.png" alt="" />
+              <p>устройство газонов</p>
+            </div>
+          </a>
+          <a href="" class="services-list_item">
+            <div class="services-list_item">
+              <img src="images/services-clumb.png" alt="" />
+              <p>схемы клумб</p>
+            </div>
+          </a>
+          <a href="" class="services-list_item">
+            <div class="services-list_item">
+              <img src="images/services-pool.png" alt="" />
+              <p>искусственные водоемы</p>
+            </div>
+          </a>
+          <p></p>
+          <a href="" class="services-list_item">
+            <div class="services-list_item">
+              <img src="images/services-village.png" alt="" />
+              <p>уход за садом</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container">
+        <h2>Портфолио</h2>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container d-g ji-c">
+      <h2 class="request">Или оставьте заявку</h2>
+      <div class="callback-form d-flex jc-sa">
+        <div class="callback-form_date d-g">
+          <input type="text" name="" id="" placeholder="Введите имя" />
+          <input type="number" name="" id="" placeholder="Введите номер телефона" />
+          <input type="email" name="" id="" placeholder="Введите e-mail" />
+        </div>
+        <textarea class="callback-form_text" name="" id="" cols="30" rows="10"
+          placeholder=" Введите сообщение"></textarea>
+      </div>
+      <button type="submit">Отправить данные</button>
+    </div>
+  </footer>
+</body>
+
 </html>

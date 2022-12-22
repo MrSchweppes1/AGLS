@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&family=Rubik&display=swap");
+
+body {
+    margin: 0;
+    font-family: "Montserrat";
+    font-weight: 400;
+}
+
+main {
+    background-color: #FFDCAC;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.d-g {
+    display: grid;
+}
+
+.jc-sb {
+    justify-content: space-between;
+}
+
+.jc-sa {
+    justify-content: space-around;
+}
+
+.ji-c {
+    justify-items: center;
+}
+
+.al-c {
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    padding-bottom: 40px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFDCAC;
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 40px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 39px;
+    text-align: center;
+    color: #005506;
+}
+
+p {
+    margin: 0;
+    color: #FFDCAC;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    padding: 0;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+}
+
+
+header {
+    background-color: #005506;
+    border-bottom: #FFDCAC solid 2px;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.header-menu {
+    width: 620px;
+    height: 100px;
+}
+
+.header-menu_listitem a {
+    font-size: 20px;
+    line-height: 32px;
+
+    color: #ffdcac;
+}
+
+.active a {
+    font-size: 20px;
+    line-height: 32px;
+    color: white;
+
+    text-shadow: 0px 0px 15px #ffffff;
+}
+
+.icons {
+    width: 32px;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+main {
+    background-color: #FFDCAC;
+}
+
+main .banner {
+    background-color: #005506;
+    padding: 80px 0;
+
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 5);
+}
+
+.banner p {
+    text-align: center;
+    width: 270px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.about-us {
+    padding: 80px 0;
+}
+
+.about-us p {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #005506;
+}
+
+.services{
+    padding: 40px 0;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 10);
+}
+.services p {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #005506;
+}
+
+.services-list{
+    justify-content: center;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 335px 275px 251px;
+    gap: 20px 30px ;
+}
+
+.services-list_item{
+    display: grid;
+    gap: 15px 0;
+    justify-items: center;
+    align-items: end;
+}
+
+.services-list_item img{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 10);
+}
+
+.portfolio{  
+    padding: 40px 0;
+}
+
+footer {
+    padding: 40px 0;
+    background-image: url(images/footer.png);
+    background-size: cover;
+}
+
+.request {
+    font-weight: 700;
+    color: #ffdcac;
+}
+
+.callback-form {
+    width: 900px;
+    padding-bottom: 60px;
+}
+
+.callback-form_date {
+    gap: 40px 0px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #ffdcac 3px;
+    width: 400px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #ffdcac;
+}
+
+input::placeholder {
+    color: #ffdcac;
+}
+
+
+textarea {
+    background-color: #ffdcac;
+    color: #005506;
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    color: #005506;
+}
+
+footer button {
+    padding: 10px 90px;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #005506;
+    background: #FFDCAC;
+
+    border: none;
+    border-radius: 15px;
+}
