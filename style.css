@@ -76,8 +76,12 @@ a {
 
 
 header {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
     background-color: #005506;
     border-bottom: #FFDCAC solid 2px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 5);
 }
 
 .container {
@@ -118,7 +122,7 @@ main {
 /* main page*/
 main .banner {
     background-color: #005506;
-    padding: 80px 0;
+    padding: 120px 0px 80px;
 
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 5);
 }
@@ -126,14 +130,30 @@ main .banner {
 .banner p {
     text-align: center;
     width: 270px;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 34px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.09em;
 }
 
 .about-us {
+    position: relative;
     padding: 80px 0;
 }
+
+.about-us .background-text {
+    position: absolute;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 90px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    top: 0px;
+    right: 10%;
+
+    color: rgba(53, 53, 53, 0.45);
+}
+
 
 .about-us p {
     font-weight: 400;
@@ -143,8 +163,24 @@ main .banner {
 }
 
 .services {
+    position: relative;
     padding: 40px 0;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 10);
+}
+
+.services .background-text {
+    position: absolute;
+    width: 800px;
+    font-weight: 300;
+    font-size: 96px;
+    line-height: 90px;
+    text-align: right;
+    letter-spacing: 0.005em;
+    top: 350px;
+    right: 65%;
+    transform: rotate(270deg);
+
+    color: rgba(53, 53, 53, 0.45);
 }
 
 .services p {
@@ -218,8 +254,9 @@ main .banner {
 
 /*              */
 
-.section_info {
-    padding: 60px;
+.info {
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 10);  
+    padding: 120px 0px 80px;
     background-color: #005506;
 }
 
@@ -231,8 +268,6 @@ main .banner {
     letter-spacing: 0.09em;
     width: 713px;
 }
-
-
 
 
 .section_business-card {
@@ -300,7 +335,7 @@ main .banner {
     margin-bottom: 90px;
 }
 
-.contacs p{    
+.contacs p {
     color: #005506;
 }
 
@@ -315,9 +350,10 @@ main .banner {
     justify-items: center;
 }
 
-.icon p{
+.icon p {
     color: #005506;
 }
+
 .name {
     margin-bottom: 170px;
 }
