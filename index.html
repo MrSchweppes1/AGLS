@@ -22,7 +22,7 @@
       </nav>
       <div class="icons d-g">
         <a href="" class="icons-viber"><img src="images/Viber-header.svg" alt="" /></a>
-        <a href="" class="icons-inst"><img src="images/Inst-header.svg" alt="" /></a>
+        <a href="https://www.instagram.com/Sparr0_ow" class="icons-inst"><img src="images/Inst-header.svg" alt="" /></a>
       </div>
     </div>
   </header>
@@ -57,32 +57,32 @@
         <p class="background-text">Alexandra Green <br>
           LandSign</p>
         <div class="services-list d-g ">
-          <a href="" class="services-list_item">
+          <a href="page-contacs.html" class="services-list_item">
             <div class="services-list_item">
               <img src="images/services-project.png" alt="" />
               <p>проектирование и реализация</p>
             </div>
           </a>
-          <a href="" class="services-list_item">
+          <a href="page-contacs.html" class="services-list_item">
             <div class="services-list_item">
               <img src="images/services-gazon.png" alt="" />
               <p>устройство газонов</p>
             </div>
           </a>
-          <a href="" class="services-list_item">
+          <a href="page-contacs.html" class="services-list_item">
             <div class="services-list_item">
               <img src="images/services-clumb.png" alt="" />
               <p>схемы клумб</p>
             </div>
           </a>
-          <a href="" class="services-list_item">
+          <a href="page-contacs.html" class="services-list_item">
             <div class="services-list_item">
               <img src="images/services-pool.png" alt="" />
               <p>искусственные водоемы</p>
             </div>
           </a>
           <p></p>
-          <a href="" class="services-list_item">
+          <a href="page-contacs.html" class="services-list_item">
             <div class="services-list_item">
               <img src="images/services-village.png" alt="" />
               <p>уход за садом</p>
@@ -95,8 +95,7 @@
     <section class="portfolio">
       <div class="container">
         <h2>Портфолио</h2>
-        <p>Alexandra Green <br>
-          LandSign</p>
+        
       </div>
     </section>
   </main>
@@ -104,16 +103,16 @@
   <footer>
     <div class="container d-g ji-c">
       <h2 class="request">Или оставьте заявку</h2>
-      <div class="callback-form d-flex jc-sa">
-        <div class="callback-form_date d-g">
-          <input type="text" name="" id="" placeholder="Введите имя" />
-          <input type="number" name="" id="" placeholder="Введите номер телефона" />
-          <input type="email" name="" id="" placeholder="Введите e-mail" />
+      <form action="telegram.php" method="POST" class="d-g ji-c">
+        <div class="callback-form d-flex jc-sa">
+          <div class="callback-form_date d-g">
+            <input type="text" name="user_name" id="" placeholder="Введите имя" />
+            <input type="number" name="user_phone" id="" placeholder="Введите номер телефона" />
+            <input type="email" name="user_email" id="" placeholder="Введите e-mail" />
+          </div>     
         </div>
-        <textarea class="callback-form_text" name="" id="" cols="30" rows="10"
-          placeholder=" Введите сообщение"></textarea>
-      </div>
-      <button type="submit">Отправить данные</button>
+        <button type="submit">Отправить данные</button>
+      </form>      
     </div>
   </footer>
 </body>
