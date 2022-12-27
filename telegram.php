@@ -6,12 +6,15 @@
 $name = $_POST['user_name'];
 $phone = $_POST['user_phone'];
 $email = $_POST['user_email'];
+$text = $_POST['user_text'];
+
 $token = "5977124513:AAGppj6qEBqi5TBIh4vkb1DKQogFfi_rjuc";
 $chat_id = "-829563157";
 $arr = array( 
   'Имя пользователя: ' => $name,
   'Телефон: ' => $phone,
-  'Email: ' => $email
+  'Email: ' => $email,
+  'Сообщение: ' => $text
 );
 
 foreach($arr as $key => $value) {
