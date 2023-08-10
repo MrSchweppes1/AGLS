@@ -11,6 +11,7 @@ var swiper = new Swiper(".mySwiper", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+    
   },
   pagination: {
     el: ".swiper-pagination",
@@ -22,7 +23,7 @@ var swiper = new Swiper(".mySwiper", {
   effect: "cube",
 
   cubeEffect: {
-    slideShadows: true,
+    slideShadows: false,
     shadow: true,
     shadowOffset: 2,
     shadowScale: 0.5,
@@ -37,17 +38,41 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
-/* page-portfolio */
+function onEntry(entry) {
+  entry.forEach(change => {
+    if (change.isIntersecting) {
+      change.target.classList.add('element-show');
+    }
+  });
+}
+let options = { threshold: [0.0] };
+let observer = new IntersectionObserver(onEntry, options);
+let elements = document.querySelectorAll('.element-animation');
+for (let elm of elements) {
+  observer.observe(elm);
+}
 
-/*  function projectVisibility(){
-  document.getElementById('afonino');
-} 
-
-document.querySelector('afonino').addEventListener('click', function (e) {
-  var div = document.querySelector('swiper-project-afonino')
-  div.style.display = div.style.display === 'none' ? 'block' : 'none'
-}) */
-
-/* ham menu */
 
 
+
+
+
+
+
+
+
+function onEntry(entry: IntersectionObserverEntry[]) {
+  entry.forEach((change: IntersectionObserverEntry) => {
+    if (change.isIntersecting) {
+      change.target.classList.add('.elementShow');
+    }
+  });
+}
+
+const options: IntersectionObserverInit = { threshold: [0.0] };
+const observer = new IntersectionObserver(onEntry, options);
+const elements = document.querySelectorAll('.elementAnimation');
+
+for (const elm of elements) {
+  observer.observe(elm);
+}

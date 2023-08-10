@@ -9,28 +9,66 @@
     <meta name="author" content="">
     <link rel="icon" href="/favicon.ico">
     <link rel="stylesheet" href="style.css">
-
+    <link rel="stylesheet" href="animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <title>Отправка формы на почту </title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
   </head>
 
   <body>
-    <div class="container background">
+    <header>
+      <div class="container d-flex al-c jc-sb">
+        <a href="index.html" class="logo">
+          <img src="images/Logo.svg" alt=""  />
+        </a>
+        <div class="menu-btn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="header-menu menu d-g ji-c">
+          <ul class="header-menu d-flex jc-sb al-c">
+            <li class="header-menu_listitem" ><a href="index.html">о нас</a></li>
+            <li class="header-menu_listitem">
+              <a href="page-services.html">услуги</a>
+            </li>
+            <li class="header-menu_listitem portfolio-menu d-flex">
+              <a>портфолио</a>
+              <ul class="portfolio-menulist d-g alc-c ji-c">
+                <li class="portfolio-menu_listitem">
+                  <a href="page-portfolio.html">реализация</a>
+                </li>
+                <li class="portfolio-menu_listitem" >
+                  <a href="page-projects.html">пректирование</a>
+                </li>
+              </ul>
+            </li>
+            <li class="header-menu_listitem">
+              <a href="page-contacs.html">контакты</a>
+            </li>
+          </ul>
+        </nav>
 
-      <h1 class="text-thank-you_h1">Спасибо за вашу заявку!</h1>
-      <h2 class="text-thank-you_h2">Мы с вами свяжемся ;)</h2>
+        <div class="icons d-g">
+          <a href="" class="icons-viber"
+            ><img src="images/Viber-header.svg" alt=""
+          /></a>
+          <a href="https://instagram.com/alexandra_green_landsign?igshid=YmMyMTA2M2Y=" class="icons-inst"
+            ><img src="images/Inst-header.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </header>
 
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="http://getbootstrap.com/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <main>
+      <div class="container background">
+        <h1 class="text-thank-you_h1">Спасибо за вашу заявку!</h1>
+        <h2 class="text-thank-you_h2">Мы с вами свяжемся ;)</h2>
+      </div>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
